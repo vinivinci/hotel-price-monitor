@@ -1,9 +1,9 @@
 name: Trivago Monitor
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "*/2 * * * *"
-  workflow_dispatch:  
+    - cron: "0 * * * *" #  run every hour  
 
 jobs:
   monitor:
